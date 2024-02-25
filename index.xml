@@ -6,20 +6,54 @@
     <description>Beat Revival Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 14 Dec 2023 14:23:04 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Feb 2024 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Interception</title>
+      <title>Progress Report 2</title>
+      <link>/post/2024-2-25-progress-report-2/</link>
+      <pubDate>Sun, 25 Feb 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2024-2-25-progress-report-2/</guid>
+      <description>
+&lt;p&gt;
+Welcome to our second progress report. This post will cover everything we&#39;ve done since our break.
+&lt;/p&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;p&gt;
+Most of our time was spent working on TDF decryption. TDF is the proprietary file format that Catalyst uses for its packet encryption.&lt;br&gt;&lt;br&gt;
+When we captured packets (which you can read about in our last post), we captured the TDF encrypted packets, meaning they have to decrypted manually.
+&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;
+&lt;a href=&#34;https://github.com/ploxxxy/node-tdf&#34;&gt;After a lot of hard work&lt;/a&gt;, we&#39;ve managed to get to a point where we can decrypt and encrypt some of the basic server functions in real-time and we&#39;ve successfully managed to get the game to communicate with the server.
+&lt;br&gt;&lt;br&gt;
+&lt;img src=&#34;https://media.discordapp.net/attachments/1171240814714814555/1209595449552412703/image.png?ex=65e77e8c&amp;is=65d5098c&amp;hm=5e254e41c9bfe3956d5a369d90d1f926e225fadb01e49f3f3b1d6e6d264b96e0&amp;=&amp;format=webp&amp;quality=lossless&#34;&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;
+We&#39;ve also been working on building the Catalyst API emulator and the Blaze server emulator (If you want to learn more about Blaze, check our previous post). They currently aren&#39;t very functional, but we have the groundwork of them which we&#39;re starting to build on.
+&lt;/p&gt;
+
+&lt;br&gt;
+&lt;p&gt;
+&lt;b&gt;Now, this doesn&#39;t mean that we&#39;re close to finishing the project.&lt;/b&gt; However, we now have the framework to build the rest of the project on. Most of the work from now on will be decrypting/deobfuscating functions and implementing them.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Interception (Progress Report 1)</title>
       <link>/post/2023-12-14-interception/</link>
       <pubDate>Thu, 14 Dec 2023 14:23:04 +0000</pubDate>
       
       <guid>/post/2023-12-14-interception/</guid>
       <description>&lt;p&gt;
-In this series of posts, We&#39;ll be covering the ways that we lifted the hood on EA/DICE&#39;s MEC server.&lt;br&gt;&lt;br&gt;
-In this post, We&#39;ll be covering packet capturing and decryption.
+In this post, We&#39;ll be covering the ways that we lifted the hood on EA/DICE&#39;s MEC server.&lt;br&gt;&lt;br&gt;
 &lt;/p&gt;
 &lt;br&gt;&lt;br&gt;
 
