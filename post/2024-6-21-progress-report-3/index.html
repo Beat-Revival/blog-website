@@ -12,11 +12,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="no-referrer-when-downgrade">
 
-<title>Interception (Progress Report 1) - Beat Revival Blog</title>
+<title>Progress Report 3 - Beat Revival Blog</title>
 
-<meta name="description" content="In this post, We&#39;ll be covering the ways that we lifted the hood on EA/DICE&#39;s MEC server.
-What exactly is a packet? A packet is simply a small chunk of data that gets sent to and from the MEC server.
-They&#39;re critical to internet communication and contain a lot of juicy data that we would like to get our hands on. However, game companies aren&#39;t (completely) stupid and do try to protect the packets that get sent and recieved.">
+<meta name="description" content="Welcome to our third progress report. This post will cover everything we&#39;ve done since our last report. In the last post, I mentioned how we were focusing on TDF decryption/encryption. Since then, compatibility has massively increased, and we&#39;re starting to see the effects.
+We&#39;ve now gotten compatibility to the point where the client successfully completes the inital handshake with the server and starts to send requests to the server&#39;s web API.">
 
 
 
@@ -79,24 +78,22 @@ They&#39;re critical to internet communication and contain a lot of juicy data t
 
 
 
-<meta property="og:url" content="/post/2023-12-14-interception/">
+<meta property="og:url" content="/post/2024-6-21-progress-report-3/">
   <meta property="og:site_name" content="Beat Revival Blog">
-  <meta property="og:title" content="Interception (Progress Report 1)">
-  <meta property="og:description" content="In this post, We&#39;ll be covering the ways that we lifted the hood on EA/DICE&#39;s MEC server.
-What exactly is a packet? A packet is simply a small chunk of data that gets sent to and from the MEC server.
-They&#39;re critical to internet communication and contain a lot of juicy data that we would like to get our hands on. However, game companies aren&#39;t (completely) stupid and do try to protect the packets that get sent and recieved.">
+  <meta property="og:title" content="Progress Report 3">
+  <meta property="og:description" content="Welcome to our third progress report. This post will cover everything we&#39;ve done since our last report. In the last post, I mentioned how we were focusing on TDF decryption/encryption. Since then, compatibility has massively increased, and we&#39;re starting to see the effects.
+We&#39;ve now gotten compatibility to the point where the client successfully completes the inital handshake with the server and starts to send requests to the server&#39;s web API.">
   <meta property="og:locale" content="en_gb">
   <meta property="og:type" content="article">
     <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2023-12-14T14:23:04+00:00">
-    <meta property="article:modified_time" content="2023-12-14T14:23:04+00:00">
+    <meta property="article:published_time" content="2024-06-21T00:00:00+00:00">
+    <meta property="article:modified_time" content="2024-06-21T00:00:00+00:00">
 
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Interception (Progress Report 1)">
-  <meta name="twitter:description" content="In this post, We&#39;ll be covering the ways that we lifted the hood on EA/DICE&#39;s MEC server.
-What exactly is a packet? A packet is simply a small chunk of data that gets sent to and from the MEC server.
-They&#39;re critical to internet communication and contain a lot of juicy data that we would like to get our hands on. However, game companies aren&#39;t (completely) stupid and do try to protect the packets that get sent and recieved.">
+  <meta name="twitter:title" content="Progress Report 3">
+  <meta name="twitter:description" content="Welcome to our third progress report. This post will cover everything we&#39;ve done since our last report. In the last post, I mentioned how we were focusing on TDF decryption/encryption. Since then, compatibility has massively increased, and we&#39;re starting to see the effects.
+We&#39;ve now gotten compatibility to the point where the client successfully completes the inital handshake with the server and starts to send requests to the server&#39;s web API.">
 
 
 
@@ -165,7 +162,7 @@ They&#39;re critical to internet communication and contain a lot of juicy data t
     <article class="post h-entry">
         <div class="post-header">
             <header>
-                <h1 class="p-name post-title">Interception (Progress Report 1)</h1>
+                <h1 class="p-name post-title">Progress Report 3</h1>
 
                 
             </header>
@@ -176,54 +173,55 @@ They&#39;re critical to internet communication and contain a lot of juicy data t
 
 
         <div class="content e-content">
-            <p>
-In this post, We'll be covering the ways that we lifted the hood on EA/DICE's MEC server.<br><br>
+            
+<p>
+Welcome to our third progress report. This post will cover everything we've done since our last report.
 </p>
 <br><br>
 
 <p>
-What exactly is a packet? A packet is simply a small chunk of data that gets sent to and from the MEC server.<br>
-They're critical to internet communication and contain a lot of juicy data that we would like to get our hands on.
+In the last post, I mentioned how we were focusing on TDF decryption/encryption. Since then, compatibility has massively increased, and we're starting to see the effects.<br>
+We've now gotten compatibility to the point where the client successfully completes the inital handshake with the server and starts to send requests to the server's web API.
+</p>
+
+<p>
+<img src='https://i.postimg.cc/0jZSmyKB/serverlog.png' border='0' alt='server log' width="575"/><br>
+<i>Screenshot from a local server log. The client sends a JSON request to the server, indicating that the initial TDF data handshake was successful.</i><br>
+(<i>May 16th, 2024.</i>)
+</p>
+<br>
+<p>
+We've made huge progress in terms of Beat L.Es. We're now at a point where Beat L.E functionality is starting to come through with a few bugs still present (for example, right now Beat L.Es will disappear after restarting the client). A lot of values are still hardcoded, though. So it's still not ready for prime time.<br>
+<img src="https://i.postimg.cc/JnBZ4Lfd/Screenshot-20240621-163801.png" width="75%" >
+<img src="https://i.postimg.cc/vm463yZH/Screenshot-20240621-164024.png" width="75%">
+<img src="https://i.postimg.cc/wxXRW0gJ/Screenshot-20240621-164135.png" width="75%">
+<br>
+<i>Screenshots from the game client, showing the successful placement of a Beat L.E</i><br>
+(<i>May 24th, 2024</i>)
+</p>
+<br>
+<p>
+Lots of people were also curious as to if Beat Revival would restore achievement functionality. Well, take a look for yourself.<br>
+<img src="https://i.postimg.cc/YqdFYdNr/image.png" border='0' alt='screenshot showing achievements unlocked on the 7th of June 2024'><br>
+<i>Screenshot from the EA App. We were able to unlock online-exclusive achievements past the server shutdown.</i><br>
+(<i>June 7th, 2024.</i>)
 </p>
 <br>
 
 <p>
-However, game companies aren't (completely) stupid and do try to protect the packets that get sent and recieved. They do this with encryption.
+Here's a list of the other stuff we've gotten working since the last progress report:
+<ul>
+  <li>Runner kit unlocks</li>
+  <li>Player stats (progress)</li>
+  <li>Player info (division, tags, echoes)</li>
+</ul>
 </p>
 <br>
 
 <p>
-There are ways to crack encryption. However, Catalyst uses somewhat recent encryption methods so there aren't many exploits.<br>
-We also can't try and bruteforce guess the decryption key as to do that in a reasonable amount of time would require a quantum computer and we unfortunately don't own one of those :(
+For now, that is all. Thank you for reading :)
 </p>
-<br>
 
-<p>
-Okay then, so how did we manage to get past it? Well the answer is to do with the server software that EA/DICE use.<br>
-EA/DICE build all of their game servers on top of their own "Blaze" software. This software has been used to build all EA/DICE game servers roughly since 2008 and is indeed the software that is used for the MEC server.
-<br>
-The issue with using the same software across lots of different online games is that it makes more people want to take a stab at attacking it. Think of all the possibilities!
-</p>
-<br>
-
-<p>
-Well indeed, people did try to attack the Blaze server software and eventually were successful. Thus, the EA-MITM project was created.
-</p>
-<br>
-
-<p>
-EA-MITM attacks Blaze's ProtoSSL implementation and bypasses it to give us access to those sweet sweet unencrypted packets as they enter and exit our computer.
-</p>
-<br>
-
-<p>
-So that's where the story ends, right? Of course not! EA-MITM can only get us so far as Blaze data that's specific to Catalyst can only be revealed to us in binary, requiring them to be manually translated back to JSON, which is what we're working on right now with the <a href="https://github.com/ploxxxy/catalyst-mitm">Catalyst-MITM</a> project :)
-</p>
-<br>
-
-<p>
-If you would like to find out more about Blaze you can look at <a href="https://www.slideshare.net/DICEStudio/battlelog-building-scalable-web-sites-with-tight-game-integration">this slideshow</a> made by DICE. Do keep in mind however that it is pretty old and outdated :p
-</p>
         </div>
         
 
@@ -234,12 +232,12 @@ If you would like to find out more about Blaze you can look at <a href="https://
 <div class="post-info">
     
         <div class="post-date dt-published">
-            <a class="u-url" href="/post/2023-12-14-interception/"><time datetime="2023-12-14">2023-12-14</time></a>
+            <a class="u-url" href="/post/2024-6-21-progress-report-3/"><time datetime="2024-06-21">2024-06-21</time></a>
             
         </div>
     
 
-    <a class="post-hidden-url u-url" href="/post/2023-12-14-interception/">/post/2023-12-14-interception/</a>
+    <a class="post-hidden-url u-url" href="/post/2024-6-21-progress-report-3/">/post/2024-6-21-progress-report-3/</a>
     <a href="/" class="p-name p-author post-hidden-author h-card" rel="me">Beat Revival Team</a>
 
 

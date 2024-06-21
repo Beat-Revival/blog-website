@@ -6,10 +6,67 @@
     <description>Beat Revival Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 25 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 21 Jun 2024 00:00:00 +0000</lastBuildDate>
     
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Progress Report 3</title>
+      <link>/post/2024-6-21-progress-report-3/</link>
+      <pubDate>Fri, 21 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2024-6-21-progress-report-3/</guid>
+      <description>
+&lt;p&gt;
+Welcome to our third progress report. This post will cover everything we&#39;ve done since our last report.
+&lt;/p&gt;
+&lt;br&gt;&lt;br&gt;
+
+&lt;p&gt;
+In the last post, I mentioned how we were focusing on TDF decryption/encryption. Since then, compatibility has massively increased, and we&#39;re starting to see the effects.&lt;br&gt;
+We&#39;ve now gotten compatibility to the point where the client successfully completes the inital handshake with the server and starts to send requests to the server&#39;s web API.
+&lt;/p&gt;
+
+&lt;p&gt;
+&lt;img src=&#39;https://i.postimg.cc/0jZSmyKB/serverlog.png&#39; border=&#39;0&#39; alt=&#39;server log&#39; width=&#34;575&#34;/&gt;&lt;br&gt;
+&lt;i&gt;Screenshot from a local server log. The client sends a JSON request to the server, indicating that the initial TDF data handshake was successful.&lt;/i&gt;&lt;br&gt;
+(&lt;i&gt;May 16th, 2024.&lt;/i&gt;)
+&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;
+We&#39;ve made huge progress in terms of Beat L.Es. We&#39;re now at a point where Beat L.E functionality is starting to come through with a few bugs still present (for example, right now Beat L.Es will disappear after restarting the client). A lot of values are still hardcoded, though. So it&#39;s still not ready for prime time.&lt;br&gt;
+&lt;img src=&#34;https://i.postimg.cc/JnBZ4Lfd/Screenshot-20240621-163801.png&#34; width=&#34;75%&#34; &gt;
+&lt;img src=&#34;https://i.postimg.cc/vm463yZH/Screenshot-20240621-164024.png&#34; width=&#34;75%&#34;&gt;
+&lt;img src=&#34;https://i.postimg.cc/wxXRW0gJ/Screenshot-20240621-164135.png&#34; width=&#34;75%&#34;&gt;
+&lt;br&gt;
+&lt;i&gt;Screenshots from the game client, showing the successful placement of a Beat L.E&lt;/i&gt;&lt;br&gt;
+(&lt;i&gt;May 24th, 2024&lt;/i&gt;)
+&lt;/p&gt;
+&lt;br&gt;
+&lt;p&gt;
+Lots of people were also curious as to if Beat Revival would restore achievement functionality. Well, take a look for yourself.&lt;br&gt;
+&lt;img src=&#34;https://i.postimg.cc/YqdFYdNr/image.png&#34; border=&#39;0&#39; alt=&#39;screenshot showing achievements unlocked on the 7th of June 2024&#39;&gt;&lt;br&gt;
+&lt;i&gt;Screenshot from the EA App. We were able to unlock online-exclusive achievements past the server shutdown.&lt;/i&gt;&lt;br&gt;
+(&lt;i&gt;June 7th, 2024.&lt;/i&gt;)
+&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;
+Here&#39;s a list of the other stuff we&#39;ve gotten working since the last progress report:
+&lt;ul&gt;
+  &lt;li&gt;Runner kit unlocks&lt;/li&gt;
+  &lt;li&gt;Player stats (progress)&lt;/li&gt;
+  &lt;li&gt;Player info (division, tags, echoes)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;
+&lt;br&gt;
+
+&lt;p&gt;
+For now, that is all. Thank you for reading :)
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Progress Report 2</title>
